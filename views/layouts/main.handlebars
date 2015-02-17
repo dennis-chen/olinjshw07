@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="stylesheets/home.css" rel="stylesheet" type="text/css">
+    <link href="stylesheets/login.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <meta charset="utf-8">
+    <title>Twotter</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+      <div id="fb-root"></div>
+      <script>
+      window.fbAsyncInit = function() {
+          FB.init({
+                        appId      : '1543143642616621',
+                              xfbml      : true,
+                                    version    : 'v2.2'
+                                        });
+        };
+
+      (function(d, s, id){
+            var js, fjs = d.getElementsByTagName(s)[0];
+                 if (d.getElementById(id)) {return;}
+                      js = d.createElement(s); js.id = id;
+                           js.src = "//connect.facebook.net/en_US/sdk.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                                   }(document, 'script', 'facebook-jssdk'));
+      </script>
+      {{{body}}}
+  </body>
+</html>
