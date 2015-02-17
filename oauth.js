@@ -1,7 +1,7 @@
 var ids = {
 facebook: {
- clientID: <%= ENV['FB_ID'] %>
- clientSecret: <%= ENV['FB_SECRET'] %>
+ clientID: process.env.FB_ID,
+ clientSecret: process.env.FB_SECRET,
  callbackURL: 'http://127.0.0.1:3000/auth/facebook/callback'
 },
 twitter: {
